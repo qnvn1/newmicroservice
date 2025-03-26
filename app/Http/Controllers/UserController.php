@@ -91,7 +91,6 @@ Class UserController extends Controller {
 
     public function delete($id)
     {
-        
         $user = User::findOrFail($id);
         $user->delete();
         return $this->successResponse(['message' => 'User deleted successfully']);
