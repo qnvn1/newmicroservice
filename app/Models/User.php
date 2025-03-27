@@ -7,17 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Model
 {
     protected $table = 'tbluser';
-
-    // Columns in the table
+    // column sa table 
     protected $fillable = [
-        'username',
-        'password',
-        'gender',
+        'username', 'password', 'gender', 'jobid'
     ];
 
     public $timestamps = false;
     protected $primaryKey = 'userid';
-
     protected $hidden = [
         'password',
     ];
